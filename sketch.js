@@ -3,8 +3,7 @@ var seaImg,shipImg;
 
 function preload(){
   seaImg = loadImage("sea.png");
-  shipImg1 = loadAnimation("ship-1.png","ship-1.png",
-                            "ship-2.png","ship-1.png");
+  
 }
 
 function setup(){
@@ -26,13 +25,11 @@ function setup(){
 
 function draw() {
   background(0);
-  sea.velocityX = -3;
+  
 
   
   //código para redefinir o plano de fundo
-  if(sea.x < 0){
-    sea.x = sea.width/8;
-  }
+  
     
   drawSprites();
 }
